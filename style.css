@@ -8,7 +8,7 @@ body {
     margin: 0;
     font-family: 'MyCustomFont', sans-serif;
 
-    cursor: url('../SheepCat.PNG'), auto;
+    cursor: url('./SheepCat.PNG'), auto;
     /* Website Background Color */
     background-image: url('./Wynn_Palace_Lake.jpg');
     background-size: cover;
@@ -52,7 +52,7 @@ nav a {
     font-weight: bold;
     font-size: 1.8rem;
 
-    cursor: url('../SheepCat.PNG'), pointer;
+    cursor: url('./SheepCat.PNG'), pointer;
 }
 
 nav a:hover {
