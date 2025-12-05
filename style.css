@@ -10,7 +10,7 @@ body {
 
     cursor: url('../SheepCat.PNG'), auto;
     /* Website Background Color */
-    background-image: url('../Wynn_Palace_Lake.jpg');
+    background-image: url('./Wynn_Palace_Lake.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
