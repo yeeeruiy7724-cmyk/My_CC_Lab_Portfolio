@@ -8,9 +8,9 @@ body {
     margin: 0;
     font-family: 'MyCustomFont', sans-serif;
 
-    cursor: url('SheepCat.PNG'), auto;
+    cursor: url('../SheepCat.PNG'), auto;
     /* Website Background Color */
-    background-image: url('Wynn_Palace_Lake.jpg');
+    background-image: url('../Wynn_Palace_Lake.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -52,7 +52,7 @@ nav a {
     font-weight: bold;
     font-size: 1.8rem;
 
-    cursor: url('SheepCat.PNG'), pointer;
+    cursor: url('../SheepCat.PNG'), pointer;
 }
 
 nav a:hover {
@@ -76,7 +76,7 @@ nav a:hover {
     padding: 22px;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
     transition: transform 0.25s, box-shadow 0.25s;
-    with: 100%;
+    width: 100%;
 }
 
 .card:hover {
