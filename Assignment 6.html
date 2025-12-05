@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <h1>Assignment 6</h1>
+        <h1>Data Portrait</h1>
+        <h1>SheepCat Sleep Space</h1>
+        <nav>
+            <a href="My Portfolio Welcome Page.html">Home</a>
+        </nav>
+    </header>
+    <main class="grid">
+        <section class="card">
+            <h2>Project Description</h2>
+            <p>The data in my project comes from my AutoSleep app, which I use on my Apple Watch to track my daily sleep duration, quality, and stages. The dataset I used to represents my sleep records from July 2025. Most days have complete data, except for a few nights when I forgot to wear my watch to bed or needed to charge it before sleeping. I selected the seven nights with the longest sleep durations (measured in minutes) as the basis for my Data Portrait.</p>
+            <p>My design started from very basic in-class coding, using simple arrays. Each circle in my work represents one of those seven longest nights. The size of each circle corresponds to how long I slept that night, longer sleep means a bigger circle. I made circles to gently zoom, creating a subtle breathing effect, and I used the color palette that makes people feel comfortable. For the background, I chose a cute wallpaper from one of my favortite illustrators' work, the name of this little lamb is "SheepCat", I love SheepCat very much.</p>
+            <p>Originally, wearing my Apple Watch to bed was just a way to monitor my health and sleep consistency. But when I turned this habit into data visualization, I found it meaningful to see my personal data transformed into something aesthetic and expressive!</p>
+        </section>
+        <section class="card">
+            <h2>Sketch</h2>
+            <div id="sketch-container">
+                 <iframe
+                src="https://editor.p5js.org/yer702_NY/full/iuEQCLgv8"
+                width = "800"
+                height = "500"
+                style = "border: none;"
+                ></iframe>
+            </div>
+            <script>
+                function setup() {
+                    let canvas = createCanvas(800, 500);
+                    canvas.parent('sketch-container');
+                 }
+                 function setup() {
+                    createCanvas(800, 500);
+                 }
+            </script>
+        </section>
+    </main>
+    <footer>
+        <p>©Valentine Ye 2025</p>
+    </footer>
+</body>
+</html>

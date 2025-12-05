@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <h1>Assignment 5</h1>
+        <h1>Optical Illusion</h1>
+        <h1>Magical Poisonous Mushroom</h1>
+        <nav>
+            <a href="My Portfolio Welcome Page.html">Home</a>
+        </nav>
+    </header>
+    <main class="grid">
+        <section class="card">
+            <h2>Project Description</h2>
+            <p>I was browsing various 3D models. I am recently interested in the Chainmail Models. Some of these models look like dragon scale armor, and some are fish scale-shaped fabrics. Initially, I planned to make a simple fish scale shape in this assignment, so I wanted to start from the most basic grid loop coding. I filled the screen with circles drawn in a loop, and constantly adjust them to make them look like neatly arranged fish scales. Then I was using the "create your own palette" tool to randomly generate color combinations and apply them to these circles and background, but after studying the p5.js official reference, I found that the gradient effect is very suitable for creating Optical Illusions, so I changed it into HSB mode to draw the gradient effect.</p>
+            <p>Moreover, I made a circle that can follow the mouse, adding a little bit fun; when exploring this part, I also combined it with the blendMode() I tried before, which is the same blend mode I use when painting in Procreate. The difference is that Procreate uses a brush or touch to set the color overlay effect, while p5 uses specific statements to trigger it. I tried them all one by one and finally chose DIFFERENT. I think the colors of this mode are the most exaggerated and strange. However, what’s more interesting is that I deleted the originally written blendMode (BLEND). I thought the original look was too ordinary, thus I wanted to see what will happen without it. After deleting it, I found that the whole canvas became very weird, which created a very ideal Illusions effect. This effect was like the hallucinations caused by eating poisonous mushrooms. I found it quite interesting, so I eventually changed the original name of the work from "Shiny Fish Scale" to "Magical Poisonous Mushroom"!</p>
+        </section>
+        <section class="card">
+            <h2>Sketch</h2>
+            <div id="sketch-container">
+                  <iframe
+                src="https://editor.p5js.org/yer702_NY/full/FXxEIT6vT"
+                width = "600"
+                height = "600"
+                style = "border: none;"
+                ></iframe>
+            </div>
+            <script>
+                function setup() {
+                    let canvas = createCanvas(600, 600);
+                    canvas.parent('sketch-container');
+                 }
+                 function setup() {
+                    createCanvas(600, 600);
+                 }
+            </script>
+        </section>
+    </main>
+    <footer>
+        <p>©Valentine Ye 2025</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* The Portfolio Website CSS Stylesheet*/
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('NeueDisplayRandom.otf') ;
+}
+
+body {
+    margin: 0;
+    font-family: 'MyCustomFont', sans-serif;
+
+    cursor: url('SheepCat.PNG'), auto;
+    /* Website Background Color */
+    background-image: url('Wynn Palace Lake.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #2a3a4a;
+    padding-bottom: 20px;
+}
+
+@keyframes bgShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Top Navigation Bar */
+.hero {
+    /* background: #fff9d1; */
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    /* border-bottom: 5px solid #fff170; */
+}
+
+.hero h1 {
+     -webkit-text-stroke: #2a3a4a 2px;
+    margin: 0 0 15px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+/* Navigartion Links and Name Text */
+nav a {
+    color: #ffffff;
+    -webkit-text-stroke: #2a3a4a 2px;
+    margin: 0 15px;
+    -moz-text-decoration-style: wavy;
+    font-weight: bold;
+    font-size: 1.8rem;
+
+    cursor: url('SheepCat.PNG'), pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Page Layout */
+.grid {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    justify-items: center;
+}
+
+/* Card Style */
+.card {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.25s, box-shadow 0.25s;
+    with: 100%;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    /* box-shadow: 0 12px 26px rgba(0, 90, 150, 0.25); */
+}
+
+.intro h2, .assignments h2 {
+    font-family: 'MyCustomFont', sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #2a3a4a;
+}
+
+/* Link Color */
+a {
+    color: #2a3a4a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom of the Page */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    backdrop-filter: blur(2px);
+    border-top: 1px solid rgb(255, 255, 255, 0.7);
+    z-index: 1000;
+}
+
+/* --- About Page Photo Gallery --- */
+/* Selfie1 */
+
+.photo-gallery {
+    display: flex;          
+    justify-content: center;
+    gap: 20px; /* The gap between the images */
+    margin-top: 10px; 
+    flex-wrap: wrap; 
+}
+
+/* Selfie2 */
+.photo-gallery img{
+    width: 45%; 
+    max-width: 400px; 
+    height: fit-content; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+    object-fit: cover; 
+}
+
+/* Moblie Device Adaptation: Align the Images Vertically */
+@media (max-width: 600px) {
+    .photo-gallery img {
+        width: 100%;
+    }
+}
